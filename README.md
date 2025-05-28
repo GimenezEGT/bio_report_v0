@@ -1,47 +1,122 @@
+# 📊 Gerador de Relatórios Estatísticos em PDF e HTML
 
-# BioReport Auto
+Este é um gerador automatizado de relatórios estatísticos a partir de arquivos CSV com dois grupos experimentais. Ele realiza análise descritiva, teste t de Student, gera gráficos comparativos e cria um relatório completo em **PDF** e **HTML** com layout profissional.
 
-**BioReport Auto** é um gerador automático de relatórios científicos para experimentos com dois grupos (ex: Controle vs Tratamento).
+---
 
-## Estrutura de pastas
+## 🧪 Para que serve?
+
+Ideal para:
+
+* Pesquisadores em ciências biológicas, sociais e saúde
+* Estudantes de pós-graduação
+* Técnicos de laboratório que precisam de relatórios rápidos
+* Qualquer pessoa que lide com dados de comparação entre dois grupos
+
+---
+
+## 🚀 Funcionalidades
+
+* 📁 Leitura de arquivos CSV com colunas: `Grupo` e `Valor`
+* 📊 Geração automática de gráficos de barras com erro padrão
+* 📈 Cálculo de média, desvio padrão e tamanho amostral (`n`)
+* 🧪 Teste t de Student para amostras independentes
+* 📄 Renderização em HTML usando Jinja2
+* 📌 Exportação final em PDF com visual limpo
+* ✅ Suporte a nomes de grupos personalizados (não precisa ser "Controle" ou "Tratamento")
+
+---
+
+## 📷 Exemplo
+
+![Exemplo do gráfico gerado](images/grafico.png)
+
+---
+
+## 📂 Estrutura do Projeto
 
 ```
-bio_report_auto/
-├── data/               # CSVs com dados experimentais
-│   └── exemplo_dados.csv
-├── images/             # Gráficos gerados
-├── output/             # Relatórios gerados
-├── templates/          # Templates HTML (Jinja2)
-├── main.py             # Script principal
-└── README.md           # Instruções e explicações
+seu_projeto/
+│
+├── data/
+│   └── exemplo_dados.csv         # Seus dados de entrada
+│
+├── images/
+│   └── grafico.png               # Gráfico gerado automaticamente
+│
+├── output/
+│   ├── relatorio.html            # Relatório HTML
+│   └── relatorio_final.pdf       # Relatório PDF
+│
+├── templates/
+│   └── relatorio.html            # Template HTML Jinja2
+│
+├── main.py                       # Script principal
+└── README.md                     # Este arquivo
 ```
 
-## Como rodar
+---
 
-1. Instale os pacotes:
+## ⚙️ Como usar
+
+### Pré-requisitos
+
+* Python 3.8+
+* Instale as bibliotecas necessárias:
 
 ```bash
-pip install pandas seaborn matplotlib scipy jinja2 weasyprint
+pip install pandas matplotlib seaborn scipy jinja2 weasyprint
 ```
 
-2. Execute o script:
+### Rodando o script
+
+1. Coloque seu arquivo `.csv` em `data/`.
+2. Certifique-se de que ele tenha duas colunas: `Grupo` e `Valor`.
+3. Execute:
 
 ```bash
 python main.py
 ```
 
-## Exemplo de entrada (.csv)
+4. Verifique os arquivos em `output/`.
+
+---
+
+## 📀 Exemplo de CSV
 
 ```csv
-Amostra,Grupo,Valor
-1,Controle,5.1
-2,Controle,4.9
-3,Controle,5.3
-4,Controle,5.0
-5,Controle,5.2
-6,Tratamento,6.8
-7,Tratamento,6.5
-8,Tratamento,6.9
-9,Tratamento,7.1
-10,Tratamento,6.7
+Grupo,Valor
+Tratamento,4.5
+Tratamento,5.2
+Tratamento,5.0
+Controle,3.8
+Controle,4.1
+Controle,3.9
 ```
+
+---
+
+## 📌 Planejado para o futuro
+
+* Interface gráfica (GUI)
+* Comparação de mais de dois grupos
+* Seleção de testes estatísticos diferentes
+* Geração de gráficos de dispersão, boxplot, etc.
+
+---
+
+## 🤝 Contribuições
+
+Sinta-se livre para abrir *issues*, *pull requests*, ou sugerir melhorias.
+
+---
+
+## 📢 Contato
+
+Se tiver dúvidas ou sugestões, entre em contato via \[[gimenezenrico@yahoo.com.br](mailto:gimenezenrico@yahoo.com.br)] ou crie uma *issue* aqui no GitHub.
+
+---
+
+## 🧠 Licença
+
+Este software é proprietário e não está licenciado para redistribuição ou modificação. Para uso comercial ou acadêmico, entre em contato com o autor.
