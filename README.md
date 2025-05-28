@@ -2,6 +2,8 @@
 
 Este é um gerador automatizado de relatórios estatísticos a partir de arquivos CSV com dois grupos experimentais. Ele realiza análise descritiva, teste t de Student, gera gráficos comparativos e cria um relatório completo em **PDF** e **HTML** com layout profissional.
 
+⚠️ Esta é uma versão beta. Use por sua conta e risco. **Feedbacks são bem-vindos!**
+
 ---
 
 ## 🧪 Para que serve?
