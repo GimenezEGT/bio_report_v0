@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Relatório Experimental</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; }
+        h1, h2 { color: #2e6c80; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        table, th, td { border: 1px solid #ccc; }
+        th, td { padding: 8px; text-align: center; }
+        img { width: 80%; margin: 20px auto; display: block; }
+    </style>
+</head>
+<body>
+    <h1>Relatório Experimental</h1>
+    <p><strong>Data:</strong> {{ data }}</p>
+    <p><strong>Descrição:</strong> Análise estatística de duas condições experimentais ({{ grupo_mais_alto }} vs {{ grupo_mais_baixo }})</p>
+
+    <h2>Resumo Estatístico</h2>
+    <table>
+        <tr>
+            <th>Grupo</th>
+            <th>Média</th>
+            <th>Desvio Padrão</th>
+            <th>n</th>
+        </tr>
+        {% for row in resumo %}
+        <tr>
+            <td>{{ row.Grupo }}</td>
+            <td>{{ "%.2f"|format(row.Media) }}</td>
+            <td>{{ "%.2f"|format(row.DP) }}</td>
+            <td>{{ row.n }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Resultado do Teste Estatístico</h2>
+    <p>Foi realizado um teste t de Student para amostras independentes.</p>
+    <p>Valor de <em>p</em>: <strong>{{ p_valor }}</strong> — {% if p_float < 0.05 %}<span style="color: green;">diferença significativa</span>{% else %}<span style="color: red;">sem diferença significativa</span>{% endif %}</p>
+
+    <h2>Gráfico</h2>
+    <img src="{{grafico_path}}" alt="Gráfico de Barras">
+
+    <h2>Interpretação</h2>
+    <p>O grupo <strong>{{ grupo_mais_alto }}</strong> apresentou maior média do que o grupo <strong>{{ grupo_mais_baixo }}</strong>.</p>
+    {% if p_float < 0.05 %}
+    <p>Como o valor de <em>p</em> foi menor que 0.05, consideramos essa diferença estatisticamente significativa.</p>
+    {% else %}
+    <p>Essa diferença não foi estatisticamente significativa (p &ge; 0.05), portanto pode ter ocorrido por acaso.</p>
+    {% endif %}
+</body>
+</html>
