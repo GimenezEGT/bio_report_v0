@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Relatório Experimental - {{ titulo }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+        th {
+            background: #ecf0f1;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Relatório Experimental</h1>
+
+    <div class="section">
+        <h2>1. Identificação</h2>
+        <p><strong>Título:</strong> {{ titulo }}</p>
+        <p><strong>Data:</strong> {{ data }}</p>
+        <p><strong>Pesquisador:</strong> {{ pesquisador }}</p>
+        <p><strong>Tipo de experimento:</strong> {{ tipo_experimento }}</p>
+        <p><strong>Objetivo:</strong> {{ objetivo }}</p>
+        <p><strong>Hipótese:</strong> {{ hipotese }}</p>
+    </div>
+
+    <div class="section">
+        <h2>2. Materiais e Métodos</h2>
+        <h3>Amostras</h3>
+        <p>{{ amostras }}</p>
+
+        <h3>Reagentes e Kits</h3>
+        <table>
+            <tr><th>Produto</th><th>Marca</th><th>Lote</th><th>Validade</th></tr>
+            {% for item in reagentes %}
+            <tr>
+                <td>{{ item.produto }}</td>
+                <td>{{ item.marca }}</td>
+                <td>{{ item.lote }}</td>
+                <td>{{ item.validade }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <h3>Equipamentos</h3>
+        <table>
+            <tr><th>Equipamento</th><th>Modelo</th><th>Software</th></tr>
+            {% for eq in equipamentos %}
+            <tr>
+                <td>{{ eq.nome }}</td>
+                <td>{{ eq.modelo }}</td>
+                <td>{{ eq.software }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <h3>Protocolo</h3>
+        <p>{{ protocolo }}</p>
+        <p><strong>Controles:</strong> {{ controles }}</p>
+    </div>
+
+    <div class="section">
+        <h2>3. Resultados</h2>
+        <p>{{ resultados }}</p>
+        <div>
+            {{ graficos_html|safe }}
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>4. Análise Estatística</h2>
+        <p><strong>Tipo de análise:</strong> {{ tipo_analise }}</p>
+        <p><strong>Software:</strong> {{ software }}</p>
+        <p><strong>Resultados:</strong> {{ resultado_estatistico }}</p>
+        <p><strong>Interpretação:</strong> {{ interpretacao }}</p>
+    </div>
+
+    <div class="section">
+        <h2>5. Discussão</h2>
+        <p>{{ discussao }}</p>
+    </div>
+
+    <div class="section">
+        <h2>6. Anexos</h2>
+        <ul>
+            {% for anexo in anexos %}
+                <li>{{ anexo }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
