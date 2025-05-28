@@ -4,11 +4,15 @@ import seaborn as sns
 import numpy as np
 from scipy import stats
 from jinja2 import Environment, FileSystemLoader
-from weasyprint import HTML
+from xhtml2pdf import pisa
 from datetime import datetime
 import os
 import base64
 
+def salvar_pdf(html_string, output_path):
+    with open(output_path, "w+b") as result_file:
+        pisa_status = pisa.CreatePDF(html_string, dest=result_file)
+    return not pisa_status.err
 
 def gerar_relatorio(csv_path, base_path=None):
     """Gera relatório (HTML e PDF) a partir de um arquivo CSV"""
@@ -79,7 +83,7 @@ def gerar_relatorio(csv_path, base_path=None):
         raise FileNotFoundError(f"Imagem não encontrada: {grafico_file_path}")
 
     # Gera o PDF
-    HTML(string=html_rendered, base_url=base_path).write_pdf(output_pdf)
+    salvar_pdf(html_rendered, output_pdf)
     return output_pdf
 
 
