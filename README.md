@@ -110,17 +110,16 @@ Controle,3.9
 
 ## 🤝 Contribuições
 
-Sinta-se livre para abrir *issues*, *pull requests*, ou sugerir melhorias.
+Sinta-se livre para abrir *issues*, *pull requests*, ou sugerir melhorias.  
 Se quiser contribuir financeiramente para o projeto faça um PIX para o QRCode a seguir:
 
-Chave: 269125f5-dc64-4281-9eb3-f48d14f4cefd
+**Chave:** 269125f5-dc64-4281-9eb3-f48d14f4cefd
 
-<img src="./.img/PIX.png" alt="PIX"; width="100"; height="100">
-
+<img src="./.img/PIX.png" alt="PIX" width="120" height="120">
 
 Também aceito pequenos satoshis:
 
-<img src="./.img/BTC.png" alt="SatoshisBW"; width="100" height="100">
+<img src="./.img/BTC.png" alt="SatoshisBW" width="120" height="120">
 
 **De qualquer modo, contribua com seu _feedback_!**
 
