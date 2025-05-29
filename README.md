@@ -114,10 +114,10 @@ Sinta-se livre para abrir *issues*, *pull requests*, ou sugerir melhorias.
 Se quiser contribuir financeiramente para o projeto faça um PIX para o QRCode a seguir:
 
 Chave: 269125f5-dc64-4281-9eb3-f48d14f4cefd
-![PIX](./.img/PIX.png=200x200)
+![PIX](./.img/PIX.png =200x200)
 
 Também aceito pequenos satoshis:
-![SatoshisBW](./.img/BTC.png=200x200)
+![SatoshisBW](./.img/BTC.png =200x200)
 
 **De qualuqer modo, contribua com seu _feedback_!**
 
