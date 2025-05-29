@@ -120,7 +120,7 @@ Chave: 269125f5-dc64-4281-9eb3-f48d14f4cefd
 
 Também aceito pequenos satoshis:
 
-<img src="./.img/BTC.png" alt="SatoshisBW" style="width:25% height:50%;">
+<img src="./.img/BTC.png" alt="SatoshisBW" style="width:100 height:100;">
 
 **De qualquer modo, contribua com seu _feedback_!**
 
