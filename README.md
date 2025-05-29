@@ -128,7 +128,7 @@ Também aceito pequenos satoshis:
 
 ## 📢 Contato
 
-Se tiver dúvidas ou sugestões, entre em contato via \[gimenezenrico@yahoo.com.br(mailto:gimenezenrico@yahoo.com.br)] ou crie uma *issue* aqui no GitHub.
+Se tiver dúvidas ou sugestões, entre em contato via gimenezenrico@yahoo.com.br ou crie uma *issue* aqui no GitHub.
 
 ---
 
