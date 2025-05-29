@@ -38,7 +38,7 @@ Ideal para:
 ## 📂 Estrutura do Projeto
 
 ```
-seu_projeto/
+bio_report_v0/
 │
 ├── data/
 │   └── exemplo_dados.csv         # Seus dados de entrada
@@ -50,10 +50,15 @@ seu_projeto/
 │   ├── relatorio.html            # Relatório HTML
 │   └── relatorio_final.pdf       # Relatório PDF
 │
+├── samples/                      # Exemplos de arquivos .csv
+│
 ├── templates/
 │   └── relatorio.html            # Template HTML Jinja2
 │
+├── app.py
 ├── main.py                       # Script principal
+├── LICENSE.txt
+├── requirements.txt
 └── README.md                     # Este arquivo
 ```
 
