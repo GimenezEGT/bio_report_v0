@@ -95,6 +95,7 @@ Controle,3.8
 Controle,4.1
 Controle,3.9
 ```
+É importante que seu arquivo tenha as colunas nomeadas como **Grupo** e **Valor**, pois é assim que o programa identifica os dados.
 
 ---
 
@@ -110,12 +111,22 @@ Controle,3.9
 ## 🤝 Contribuições
 
 Sinta-se livre para abrir *issues*, *pull requests*, ou sugerir melhorias.
+Se quiser contribuir financeiramente para o projeto faça um PIX para o QRCode a seguir:
+
+<>
+Chave: 269125f5-dc64-4281-9eb3-f48d14f4cefd
+![PIX](./.img/PIX.png)
+
+Também aceito pequenos satoshis:
+![SatoshisBW](./.img/BTC.png)
+
+**De qualuqer modo, contribua com seu _feedback_!**
 
 ---
 
 ## 📢 Contato
 
-Se tiver dúvidas ou sugestões, entre em contato via \[[gimenezenrico@yahoo.com.br](mailto:gimenezenrico@yahoo.com.br)] ou crie uma *issue* aqui no GitHub.
+Se tiver dúvidas ou sugestões, entre em contato via \[gimenezenrico@yahoo.com.br(mailto:gimenezenrico@yahoo.com.br)] ou crie uma *issue* aqui no GitHub.
 
 ---
 
