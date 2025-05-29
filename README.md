@@ -64,6 +64,7 @@ seu_projeto/
 ### Pré-requisitos
 
 * Python 3.8+
+* GTK+ for Windows (https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer?tab=readme-ov-file)
 * Instale as bibliotecas necessárias:
 
 ```bash
