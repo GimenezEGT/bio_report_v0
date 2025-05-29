@@ -115,12 +115,12 @@ Se quiser contribuir financeiramente para o projeto faça um PIX para o QRCode a
 
 Chave: 269125f5-dc64-4281-9eb3-f48d14f4cefd
 
-<img src="./.img/PIX.png" alt="PIX" style="width:50%; height:50%;">
+<img src="./.img/PIX.png" alt="PIX"; width="50%"; height="50%">
 
 
 Também aceito pequenos satoshis:
 
-<img src="./.img/BTC.png" alt="SatoshisBW" style="width:1 height:1;">
+<img src="./.img/BTC.png" alt="SatoshisBW"; width="50%" height="50%";>
 
 **De qualquer modo, contribua com seu _feedback_!**
 
