@@ -39,7 +39,7 @@ def gerar_relatorio(csv_path, base_path=None):
     grupo1_nome, grupo2_nome = grupos_unicos
     grupo1 = df[df["Grupo"] == grupo1_nome]["Valor"]
     grupo2 = df[df["Grupo"] == grupo2_nome]["Valor"]
-    _, p_valor = stats.ttest_ind(grupo1, grupo2)
+    _, p_valor = stats.ttest_ind(grupo1, grupo2, equal_var=False)
 
     # Geração do gráfico
     sns.set(style="whitegrid")
@@ -84,6 +84,7 @@ def gerar_relatorio(csv_path, base_path=None):
 
     # Gera o PDF
     salvar_pdf(html_rendered, output_pdf)
+    print("p-value: ", p_valor)
     return output_pdf
 
 
