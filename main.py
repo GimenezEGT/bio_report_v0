@@ -84,7 +84,6 @@ def gerar_relatorio(csv_path, base_path=None):
 
     # Gera o PDF
     salvar_pdf(html_rendered, output_pdf)
-    print("p-value: ", p_valor)
     return output_pdf
 
 
