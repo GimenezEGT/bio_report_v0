@@ -38,7 +38,7 @@ Ideal para:
 ## 📂 Estrutura do Projeto
 
 ```
-seu_projeto/
+bio_report_v0/
 │
 ├── data/
 │   └── exemplo_dados.csv         # Seus dados de entrada
@@ -50,10 +50,15 @@ seu_projeto/
 │   ├── relatorio.html            # Relatório HTML
 │   └── relatorio_final.pdf       # Relatório PDF
 │
+├── samples/                      # Exemplos de arquivos .csv
+│
 ├── templates/
 │   └── relatorio.html            # Template HTML Jinja2
 │
+├── app.py
 ├── main.py                       # Script principal
+├── LICENSE.txt
+├── requirements.txt
 └── README.md                     # Este arquivo
 ```
 
@@ -64,6 +69,7 @@ seu_projeto/
 ### Pré-requisitos
 
 * Python 3.8+
+* GTK+ for Windows (https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer?tab=readme-ov-file)
 * Instale as bibliotecas necessárias:
 
 ```bash
@@ -127,7 +133,7 @@ Também aceito pequenos satoshis:
 
 ## 📢 Contato
 
-Se tiver dúvidas ou sugestões, entre em contato via \[gimenezenrico@yahoo.com.br(mailto:gimenezenrico@yahoo.com.br)] ou crie uma *issue* aqui no GitHub.
+Se tiver dúvidas ou sugestões, entre em contato via gimenezenrico@yahoo.com.br ou crie uma *issue* aqui no GitHub.
 
 ---
 
